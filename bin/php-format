@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-phpcbf --standard=./config/laravel_phpcs_ruleset.xml $1

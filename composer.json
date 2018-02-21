@@ -1,5 +1,5 @@
 {
-    "name": "pixelunion/laravel-validate",
+    "name": "pixelunion/php-validate",
     "description": "Linters and formatters for Pixel Union's Laravel projects.",
     "require": {
         "squizlabs/php_codesniffer": "^3.2"

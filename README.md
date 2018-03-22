@@ -1,13 +1,29 @@
 # PHP Validate
 
 A composer package that provides php validation in accordance with PRS-2
-standards, with configuration specific to Laravel.
+standards, along with any extra validation rules we choose.
 
 ## Installation
 
+This is a composer package but is hosted on github.
+
+Add this to `composer.json`:
 ```
-[coming soon]
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pixelunion/pxu-php-format"
+        }
+    ],
+
 ```
+
+And then this to `require-dev`:
+```
+        "pixelunion/pxu-php-format": "dev-master"
+```
+
+And then run `composer install` as per usual.
 
 ## Usage: CLI
 
@@ -23,7 +39,7 @@ Leaving blank will run against all files in a project.
 ## Usage: Manual
 
 To use our shared ruleset manually, point your `--standard` argument to
-`vendor/pixelunion/php-validate/config/laravel_phpcs_ruleset.xml`
+`vendor/pixelunion/pxu-php-format/PixelUnion/ruleset.xml`
 
 ## Usage with Travis CI
 
@@ -42,5 +58,16 @@ script:
   - ...
   - ...
 ```
+
+## Custom Sniffs
+
+Extra sniffs beyond the PSR-2 standard can be added in `PixelUnion/Sniffs`.
+Documentation for writing custom sniffs can be found in the
+[PHP_Codesniffer Wiki](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Coding-Standard-Tutorial#creating-the-sniff).
+Please organize custom sniffs under a category, for example `Sniffs/Operators/TernaryOperatorSniff.php`.
+
+### Testing custom sniffs
+
+(coming soon)
 
 

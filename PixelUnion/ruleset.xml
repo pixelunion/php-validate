@@ -11,27 +11,11 @@
     <description>The Pixel Union PHP Coding Standards</description>
 
     <!--
-    If no files or directories are specified on the command line
-    your custom standard can specify what files should be checked
-    instead.
-
-    Note that specifying any file or directory path
-    on the command line will ignore all file tags.
-    -->
-    <file>app</file>
-    <file>config</file>
-    <file>public</file>
-    <file>resources</file>
-    <!-- <file>routes</file> -->
-    <file>tests</file>
-
-    <!--
        You can hard-code ignore patterns directly into your
        custom standard so you don't have to specify the
        patterns on the command line.
 
     -->
-    <exclude-pattern>*/database/*</exclude-pattern>
     <exclude-pattern>*/cache/*</exclude-pattern>
     <exclude-pattern>*/*.js</exclude-pattern>
     <exclude-pattern>*/*.css</exclude-pattern>
